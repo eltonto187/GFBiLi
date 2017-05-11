@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EA1011771EC47F1F0037B5FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1011761EC47F1F0037B5FA /* AppDelegate.swift */; };
-		EA1011791EC47F1F0037B5FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1011781EC47F1F0037B5FA /* ViewController.swift */; };
 		EA10117C1EC47F1F0037B5FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA10117A1EC47F1F0037B5FA /* Main.storyboard */; };
 		EA10117E1EC47F1F0037B5FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA10117D1EC47F1F0037B5FA /* Assets.xcassets */; };
 		EA1011811EC47F1F0037B5FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA10117F1EC47F1F0037B5FA /* LaunchScreen.storyboard */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		EA1011731EC47F1F0037B5FA /* GFBili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GFBili.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA1011761EC47F1F0037B5FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA1011781EC47F1F0037B5FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA10117B1EC47F1F0037B5FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA10117D1EC47F1F0037B5FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA1011801EC47F1F0037B5FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,8 +95,8 @@
 		EA1011751EC47F1F0037B5FA /* GFBili */ = {
 			isa = PBXGroup;
 			children = (
+				EAB86EC41EC4A7760092A476 /* Classes */,
 				EA1011761EC47F1F0037B5FA /* AppDelegate.swift */,
-				EA1011781EC47F1F0037B5FA /* ViewController.swift */,
 				EA10117A1EC47F1F0037B5FA /* Main.storyboard */,
 				EA10117D1EC47F1F0037B5FA /* Assets.xcassets */,
 				EA10117F1EC47F1F0037B5FA /* LaunchScreen.storyboard */,
@@ -123,6 +121,45 @@
 				EA1011981EC47F1F0037B5FA /* Info.plist */,
 			);
 			path = GFBiliUITests;
+			sourceTree = "<group>";
+		};
+		EAB86EC41EC4A7760092A476 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EAB86EC61EC4A7760092A476 /* Main */,
+				EAB86EC51EC4A7760092A476 /* Home */,
+				EAB86EC71EC4A7760092A476 /* Profile */,
+				EAB86EC81EC4A7760092A476 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EAB86EC51EC4A7760092A476 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EAB86EC61EC4A7760092A476 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EAB86EC71EC4A7760092A476 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		EAB86EC81EC4A7760092A476 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +299,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA1011791EC47F1F0037B5FA /* ViewController.swift in Sources */,
 				EA1011771EC47F1F0037B5FA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,8 +451,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = MWF3G2U2VL;
 				INFOPLIST_FILE = GFBili/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ioslearning.GFBili;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,8 +466,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = MWF3G2U2VL;
 				INFOPLIST_FILE = GFBili/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ioslearning.GFBili;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +554,7 @@
 				EA10119D1EC47F1F0037B5FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA10119E1EC47F1F0037B5FA /* Build configuration list for PBXNativeTarget "GFBiliTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +563,7 @@
 				EA1011A01EC47F1F0037B5FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA1011A11EC47F1F0037B5FA /* Build configuration list for PBXNativeTarget "GFBiliUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +572,7 @@
 				EA1011A31EC47F1F0037B5FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
